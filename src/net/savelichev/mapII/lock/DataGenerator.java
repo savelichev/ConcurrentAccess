@@ -9,8 +9,10 @@ public class DataGenerator implements Runnable {
         this.mapContainer = mapContainer;
     }
 
-
-    public void generateData(){
+    /**
+     * Generate data and put it into map
+     */
+    private void generateData(){
         int key=0;
         while (true){
             key++;

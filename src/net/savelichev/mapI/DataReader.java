@@ -10,6 +10,9 @@ public class DataReader implements Runnable {
     }
 
 
+    /**
+     * read Data from map in container
+     */
     public void readData() {
         while (true) {
             mapContainer.readData();

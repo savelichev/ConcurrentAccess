@@ -1,9 +1,5 @@
 package net.savelichev.mapI;
 
-
-import java.util.HashMap;
-import java.util.Map;
-
 public class DataGenerator implements Runnable {
 
     private MapContainer mapContainer;
@@ -13,11 +9,14 @@ public class DataGenerator implements Runnable {
     }
 
 
-    public void generateData(){
-        int key=0;
-        while (true){
+    /**
+     * Generate data and put it into map
+     */
+    private void generateData() {
+        int key = 0;
+        while (true) {
             key++;
-            mapContainer.writeData(key,key);
+            mapContainer.writeData(key, key);
 
         }
     }

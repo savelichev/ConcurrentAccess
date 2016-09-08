@@ -1,4 +1,4 @@
-package net.savelichev.mapII.collectionsSynchronizedMap;
+package net.savelichev.mapII.synchronizedMap;
 
 
 public class DataReader implements Runnable {
@@ -9,8 +9,10 @@ public class DataReader implements Runnable {
         this.mapContainer = mapContainer;
     }
 
-
-    public void readData() {
+    /**
+     * read Data from map in container
+     */
+    private void readData() {
         while (true) {
             mapContainer.readData();
         }

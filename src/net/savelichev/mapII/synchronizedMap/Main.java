@@ -1,4 +1,4 @@
-package net.savelichev.mapII.collectionsSynchronizedMap;
+package net.savelichev.mapII.synchronizedMap;
 
 public class Main {
 
