@@ -8,9 +8,7 @@ import java.util.concurrent.ConcurrentMap;
 
 public class MapContainer {
 
-
-//    private Map<Integer, Integer> hashMap = new HashMap<>();
-    private ConcurrentMap<Integer,Integer> concurrentMap = new ConcurrentHashMap<>();
+    private ConcurrentMap<Integer, Integer> concurrentMap = new ConcurrentHashMap<>();
 
     public void writeData(int key, int value) {
 
