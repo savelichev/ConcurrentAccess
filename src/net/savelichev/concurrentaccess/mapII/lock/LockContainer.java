@@ -1,4 +1,6 @@
-package net.savelichev.mapII.lock;
+package net.savelichev.concurrentaccess.mapII.lock;
+
+import net.savelichev.concurrentaccess.interfaces.IMapContainer;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -7,9 +9,9 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * Contains hash map with synchronization, realized by using Lock
+ * Realization of the container with "Lock" synchronization.
  */
-public class MapContainer {
+public class LockContainer implements IMapContainer{
 
 
     private Map<Integer, Integer> hashMap = new HashMap<>();

@@ -1,11 +1,15 @@
-package net.savelichev.mapII.synchronizedMap;
+package net.savelichev.concurrentaccess.mapII.synchronizedd;
+
+import net.savelichev.concurrentaccess.interfaces.IMapContainer;
+import net.savelichev.concurrentaccess.utills.DataGenerator;
+import net.savelichev.concurrentaccess.utills.DataReader;
 
 public class Main {
 
     public static void main(String[] args) {
 
 
-        MapContainer mapContainer = new MapContainer();
+        IMapContainer mapContainer = new SynchronizedContainer();
 
         Thread generator = new Thread(new DataGenerator(mapContainer));
         generator.setName("generator");

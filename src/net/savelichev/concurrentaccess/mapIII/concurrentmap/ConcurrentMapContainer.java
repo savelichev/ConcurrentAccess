@@ -1,18 +1,22 @@
-package net.savelichev.mapIII.concurentmap;
+package net.savelichev.concurrentaccess.mapIII.concurrentmap;
 
-import java.util.HashMap;
-import java.util.Map;
+import net.savelichev.concurrentaccess.interfaces.IMapContainer;
+
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
 
-public class MapContainer {
+/**
+ * Realization of the container with ConcurrentHashMap synchronization.
+ */
+public class ConcurrentMapContainer implements IMapContainer {
 
     private ConcurrentMap<Integer, Integer> concurrentMap = new ConcurrentHashMap<>();
 
     /**
      * Insert data into map
-     * @param key key for inserting
+     *
+     * @param key   key for inserting
      * @param value value for inserting
      */
     public void writeData(int key, int value) {

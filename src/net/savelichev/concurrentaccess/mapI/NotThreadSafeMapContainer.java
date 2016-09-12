@@ -1,20 +1,23 @@
-package net.savelichev.mapI;
+package net.savelichev.concurrentaccess.mapI;
+
+import net.savelichev.concurrentaccess.interfaces.IMapContainer;
 
 import java.util.HashMap;
 import java.util.Map;
 
 
 /**
- * Contains hash map without synchronization
+ * Realization of the container without synchronization.
  */
-public class MapContainer {
+public class NotThreadSafeMapContainer implements IMapContainer {
 
 
     private Map<Integer, Integer> hashMap = new HashMap<>();
 
     /**
      * Insert data into map
-     * @param key key for inserting
+     *
+     * @param key   key for inserting
      * @param value value for inserting
      */
     public void writeData(int key, int value) {

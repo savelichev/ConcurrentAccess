@@ -1,13 +1,15 @@
-package net.savelichev.mapII.synchronizedd;
+package net.savelichev.concurrentaccess.mapII.synchronizedd;
+
+import net.savelichev.concurrentaccess.interfaces.IMapContainer;
 
 import java.util.HashMap;
 import java.util.Map;
 
 
 /**
- * Contains hash map with synchronized methods
+ * Realization of the container with "synchronized" synchronization.
  */
-public class MapContainer {
+public class SynchronizedContainer implements IMapContainer {
 
 
     private Map<Integer, Integer> hashMap = new HashMap<>();
